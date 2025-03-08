@@ -15,15 +15,6 @@ st.metric("Total Applications", df["Applications"].sum())
 st.metric("Total Admissions", df["Admitted"].sum())
 st.metric("Total Enrollments", df["Enrolled"].sum())
 
-# Análisis detallado por métrica
-st.subheader("Analysis")
-st.write("- **Total applications, admissions, and enrollments per term:** The number of applications has been stable, but the conversion rate from applications to enrollments varies per term, indicating potential areas for improving admissions efficiency.")
-st.write("- **Retention rate trends over time:** A steady increase in retention rates suggests that student support systems and academic programs are improving, leading to better student retention.")
-st.write("- **Student satisfaction scores over the years:** Student satisfaction has shown positive trends, implying improvements in academic and extracurricular experiences. Areas with lower satisfaction should be analyzed for potential interventions.")
-st.write("- **Enrollment breakdown by department (Engineering, Business, Arts, Science):** Engineering and Business programs show the highest enrollments, while Arts and Science maintain stable numbers. Strategies to boost interest in less-enrolled programs could be explored.")
-st.write("- **Comparison between Spring vs. Fall term trends:** Enrollment remains fairly balanced between Spring and Fall, but minor fluctuations indicate possible seasonal impacts on admissions trends.")
-st.write("- **Compare trends between departments, retention rates, and satisfaction levels:** Departments with higher enrollments tend to have higher satisfaction and retention rates, suggesting that well-established programs attract and retain students better. Lower-enrollment programs may require strategic enhancements to improve retention.")
-
 # 2️⃣ Tasa de retención a lo largo del tiempo
 st.header("Retention Rate Trends")
 fig, ax = plt.subplots()
